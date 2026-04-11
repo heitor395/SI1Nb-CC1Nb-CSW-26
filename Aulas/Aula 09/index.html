@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula-09 - Formularios</title>
+</head>
+
+<body>
+
+    <h2>Formulario</h2>
+
+    <form action="#" method="post">
+
+        <table border="1">
+
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" placeholder="Digite seu nome"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>E-mail pessoal:</td>
+                <td><input type="email" name="email-pessoal"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>E-mail (patter):</td>
+                <td><input type="email" name="email-pattern" placeholder="Digite seu email com @"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Idade:</td>
+                <td><input type="number" name="idade" size="5"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Deixe um comentário:<br>
+                    <textarea name="comentario" cols="40" rows="5"></textarea>
+                </td>
+                <td>
+                    <select name="investimentos1" size="3">
+                        <option value="poupanca">Poupança</option>
+                        <option value="cdb">CDB</option>
+                        <option value="tesouro">Tesouro Direto</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Materia de interesse:<br>
+                    <input type="checkbox" name="backend"> Backend<br>
+                    <input type="checkbox" name="frontend"> FrontEnd<br>
+                    <input type="checkbox" name="fullstack"> FullStack
+                </td>
+                <td>
+                    Tipo de Viagem:<br>
+                    <input type="radio" name="viagem" value="negocios"> Negócios<br>
+                    <input type="radio" name="viagem" value="lazer"> Lazer<br>
+                    <input type="radio" name="viagem" value="turismo"> Turismo<br>
+                    <input type="radio" name="viagem" value="academico"> Acadêmico
+                </td>
+                <td>
+                    <select name="investimentos2" size="5" multiple>
+                        <option value="fundos">Fundos Imobiliários</option>
+                        <option value="cdi">CDI</option>
+                        <option value="debentures">DEBÊNTURES</option>
+                        <option value="cripto">Criptomoedas</option>
+                        <option value="acoes">Ações</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Esporte favorito:</td>
+                <td>
+                    <select name="esporte" size="4" multiple>
+                        <option value="futebol">Futebol</option>
+                        <option value="basquete">Basquete</option>
+                        <option value="volei">Vôlei</option>
+                        <option value="tenis">Tênis</option>
+                    </select>
+                </td>
+                <td>
+                    Investimentos:
+                    <select name="investimentos3">
+                        <option value="poupanca">Poupança</option>
+                        <option value="cdb">CDB</option>
+                        <option value="tesouro">Tesouro Direto</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Escolha uma cor:</td>
+                <td><input type="color" name="cor"></td>
+                <td>
+                    Selecione um arquivo:
+                    <input type="file" name="arquivo">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    Data e Hora envio:
+                    <input type="datetime-local" name="data-hora">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+                <td><input type="reset" value="Limpar"></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
